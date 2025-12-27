@@ -24,7 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
             'bus_stop_2': '站牌：福州街',
             'bus_routes_2': '路線：5, 242, 624, 624 (綠野香坡), 670',
             'btn_text': 'English',
-            'footer_text': '&copy; 2026 吳岳樺 & 張庭昀. All Rights Reserved.'
+            'footer_text': '&copy; 2026 吳岳樺 & 張庭昀. All Rights Reserved.',
+            'dress_code_title': '穿搭靈感',
+            'dress_code_text': '我們整理了一些與場地復古氛圍相襯的色調供您參考。<br><span class="font-medium text-mocha block mt-2">這完全不是強制的。</span>請以您的舒適與風格為主，您的到來就是我們最大的快樂！',
+            'dress_code_label': '參考色票'
         },
         'en': {
             'hero_name_1': 'Kris',
@@ -49,11 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
             'bus_stop_2': 'Stop: Fuzhou St.',
             'bus_routes_2': 'Routes: 5, 242, 624, 670',
             'btn_text': '中文',
-            'footer_text': '&copy; 2026 Kris & Ellie. All Rights Reserved.'
+            'footer_text': '&copy; 2026 Kris & Ellie. All Rights Reserved.',
+            'dress_code_title': 'Dress Code Inspiration',
+            'dress_code_text': 'We have curated a palette inspired by the vintage atmosphere of the venue. <br><span class="font-medium text-mocha block mt-2">However, this is completely optional.</span> Please prioritize your own comfort and style—we are just happy to have you with us!',
+            'dress_code_label': 'Reference Palette'
         }
     };
 
     let currentLang = 'zh-TW';
+    updateLanguage(currentLang); // Initialize language on load
+
     const langBtn = document.getElementById('lang-toggle');
 
     if (langBtn) {
