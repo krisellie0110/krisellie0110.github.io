@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     let currentLang = 'zh-TW';
-    updateLanguage(currentLang); // Initialize language on load
-
     const langBtn = document.getElementById('lang-toggle');
+    
+    updateLanguage(currentLang); // Initialize language on load
 
     if (langBtn) {
         langBtn.addEventListener('click', () => {
